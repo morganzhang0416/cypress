@@ -1,7 +1,7 @@
-describe( 'register user', () =>{
+describe( 'register and delete user', () =>{
     it('create a new user then delete it',()=> {
         //visting page
-        cy.visit('https://automationexercise.com/').should('exist')
+        cy.visit('/').should('exist')
         //click sign up
         cy.get('.shop-menu > .nav > :nth-child(4) > a').should('contain','Signup').click()
         cy.url().should('include','/login')

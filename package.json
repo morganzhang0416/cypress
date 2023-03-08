@@ -3,5 +3,8 @@
     "cypress": "^12.6.0",
     "cypress-iframe": "^1.0.1",
     "cypress-xpath": "^2.0.1"
+  },
+  "dependencies": {
+    "cypress-real-events": "^1.7.6"
   }
 }

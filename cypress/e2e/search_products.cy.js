@@ -1,7 +1,7 @@
 describe('verify products', () =>{
     it('visit homepage and click product' ,() => {
     
-        cy.visit('https://automationexercise.com/')
+        cy.visit('/')
         cy.get('a[href = "/products"]').should('be.visible').click()
         cy.contains('all products',{matchCase:false}).should('be.visible')
         cy.get('#search_product').should('exist').type('tshirt')

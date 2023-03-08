@@ -1,7 +1,7 @@
 describe('contact us', () => {
     it('visit contact', ()=> {
         // visit homepage and verify 
-        cy.visit('https://automationexercise.com/')
+        cy.visit('/')
         cy.contains('h2','Category').should('be.visible')
         //click contact us 
         cy.get('a[href="/contact_us"]').click();

@@ -1,7 +1,7 @@
 describe( 'register user', () =>{
     it('create a new user',()=> {
         //visting page
-        cy.visit('https://automationexercise.com/').should('exist')
+        cy.visit('/').should('exist')
         //click login
         cy.get('.shop-menu > .nav > :nth-child(4) > a').should('contain','Signup').click()
         cy.url().should('include','/login')
